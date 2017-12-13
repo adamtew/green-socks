@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New FIle</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  Hello World
+  <div id="box" class="circle"></div>
+  Tween
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    $('#box').animate({height : "300px"});
+    TweenMax.to(".circle", 2, {left:600});
+    TweenLite.to("#box", 0.7, {left: 0});
+    console.log(TweenMax)
+  </script>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
+
